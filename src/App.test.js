@@ -14,6 +14,14 @@ test("contains Lions and Tigers scoreboards", () => {
   // ACT - GETTING THE NODE BY TEXT
   container.getByText(/lions/i);
   container.getByText(/tigers/i);
-  // 
+  // ASSERTION IS IF ^^^ IS TRUTHY
 });
 
+test("contains home touchdown button", () => {
+  // ARRANGE
+  const container = render(<App />);
+  console.log(container);
+  // ACT - GETTING THE NODE BY TEXT
+  container.getByText(/home touchdown/i);
+  // ASSERTION IS IF ^^^ IS TRUTHY
+});
